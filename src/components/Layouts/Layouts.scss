@@ -1,0 +1,111 @@
+/*---------------Header-----------------*/
+html {
+  min-height: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  background-color: #2b4162;
+  background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+}
+
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+
+  .logo {
+    font-size: 2em;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .navigationItem {
+    display: flex;
+    justify-content: space-between;
+    .navLink {
+      position: relative;
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.1em;
+      font-weight: 500;
+      margin-left: 40px;
+    }
+    .button {
+      &:hover {
+        padding: 5px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 5px 0 #ccc;
+      }
+    }
+    .register {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .login {
+      background: transparent;
+      border: 2px solid #fff;
+      border-radius: 8px;
+      font-size: 0.8em;
+      padding: 5px 10px;
+      &:hover {
+        background: #fff;
+        color: #162938;
+      }
+    }
+  }
+}
+/*---------------Footer-----------------*/
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  margin: auto;
+  background-color: #010619;
+
+  .social-media-img {
+    height: 3vh;
+  }
+
+  .react {
+    height: 6vh;
+  }
+  @keyframes fade {
+    0% {
+      opacity: 0.2;
+    }
+
+    100% {
+      opacity: 0.9;
+    }
+  }
+  @media screen and (max-width: 1295px) {
+    footer {
+      width: 95%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    footer {
+      opacity: 0.9;
+    }
+  }
+}
+/*---------------mainOutlet-----------------*/
+.mainOutlet {
+  margin: 40px 0 100px 0;
+}
+/*---------------endPage-----------------*/

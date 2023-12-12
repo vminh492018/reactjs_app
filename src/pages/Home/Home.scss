@@ -1,0 +1,62 @@
+.flexHome {
+  display: flex;
+  margin: 0 0 10px 0;
+  //Tags
+  .tagsWrapper {
+    order: 2;
+    flex: 1;
+    height: 50%;
+    width: 100%;
+    padding: 5px 0 5px 15px;
+    border-radius: 25px;
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    margin: 20px 50px 0 30px;
+    box-shadow: 0px 0px 18px 0 #000;
+
+    .listTags {
+      padding: 0.5rem 0;
+      list-style: none;
+      .link {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        font-size: 1.125rem;
+        font-weight: 300;
+        color: white;
+        text-decoration: none;
+        &:hover {
+          border-radius: 10px;
+          text-decoration: underline;
+          background-color: #2b4162;
+          background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+          box-shadow: 0px 0px 5px 0 #ccc;
+        }
+      }
+    }
+  }
+  //Articles list
+  .articleWrapper {
+    flex: 4;
+    order: 1;
+    padding-left: 20px;
+    .message_loading {
+      color: green;
+    }
+  }
+}
+.navFeed {
+  display: flex;
+  gap: 2em;
+  margin: 0 0 0 2.5em;
+  a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+      color: red;
+    }
+    &.active {
+      color: #29ab87;
+      border-bottom: 1px tomato solid;
+    }
+  }
+}

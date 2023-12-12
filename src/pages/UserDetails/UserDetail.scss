@@ -1,0 +1,68 @@
+.UserDetail-wrapper{
+    color: white;
+    width: 100%;
+    
+    .user-detail{
+        margin: 0 auto;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        >a{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            width: 140px;
+            height: 40px;
+            padding: 10px 20px;
+            justify-content: space-evenly;
+            border: 1px solid white;
+            transition: .2s all ease-in;
+            border-radius: 5px;
+            &:hover{
+                color: black;
+                background-color: rgb(95, 139, 139);
+            }
+        }
+        >img{
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        >p{
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+    }
+    .tabs{
+        width: 100%;
+        padding: 20px 0;
+        >ul{
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            border-bottom: 2px solid goldenrod;
+            >li{
+                margin-right: 20px;
+                transition: .2s all ease-in-out;
+                &:hover{
+                    cursor: pointer;
+                    color: greenyellow;
+                }
+            }
+            .active{
+                border-bottom: 2px solid rgb(165, 229, 70);
+            }
+        }
+       
+    }
+    .content{
+        width: 80%;
+        min-width: 300px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,108 @@
+/*---------------Login, Register Form--------------------*/
+$base-color: #162938;
+.inputbox {
+  position: relative;
+  margin: 30px 0;
+  width: 310px;
+  border-bottom: 2px solid $base-color;
+  .ion-icon {
+    position: absolute;
+    right: 8px;
+    color: $base-color;
+    font-size: 1.2em;
+    top: 20px;
+  }
+  .label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: $base-color;
+    font-size: 1em;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  .formControl {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: $base-color;
+    &:focus ~ .label,
+    &:not([value='']) ~ .label {
+      top: -5px;
+      font-size: 13px;
+    }
+  }
+}
+
+.forget {
+  display: flex;
+  justify-content: space-between;
+  label {
+    font-size: 0.9rem;
+    .checkbox {
+      margin-right: 3px;
+    }
+    a {
+      text-decoration: none;
+      color: $base-color;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.submit {
+  margin-top: 20px;
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  background: $base-color;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  .spinner {
+    vertical-align: middle;
+    font-size: 1.25rem;
+    -webkit-animation: spin 2s infinite linear;
+    animation: spin 2s infinite linear;
+  }
+
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+
+    100% {
+      -webkit-transform: rotate(359deg);
+      transform: rotate(359deg);
+    }
+  }
+
+  @keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+
+    100% {
+      -webkit-transform: rotate(359deg);
+      transform: rotate(359deg);
+    }
+  }
+}
+
+.error {
+  margin: 0 0 15px 0;
+  font-size: 15px;
+  color: rgba(161, 7, 7, 0.804);
+}

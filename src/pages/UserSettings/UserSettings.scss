@@ -1,0 +1,36 @@
+.User-Setting-wrapper{
+    >div{
+        width: 50%;
+        margin: 0 auto;
+        max-width: 600px;
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        >h3{
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        >input{
+            height: 45px;
+        }
+        >input,>textarea{
+            margin-bottom: 20px;
+            border-radius: 7px;
+            width: 100%;
+            font-size: 1.1rem;
+            padding: 0 25px;
+        }
+        >button{
+            border-radius: 5px;
+            width: 150px;
+            height: 45px;
+            transition: .2s all ease-in;
+            &:hover{
+                cursor: pointer;
+                background-color: rgb(239, 239, 123);
+            }
+        }
+    }
+}

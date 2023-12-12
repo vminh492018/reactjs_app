@@ -1,0 +1,63 @@
+.article-form-wrapper {
+  width: 100%;
+  min-height: 500px;
+
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  > form {
+    min-width: 300px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    > div {
+      width: 100%;
+      margin-bottom: 20px;
+      > div:nth-child(2) {
+        color: white;
+      }
+      .tags-list {
+        margin-top: 10px;
+        display: flex;
+        > li {
+          margin-right: 10px;
+          display: flex;
+          align-items: center;
+          transition: 0.2s all ease-in;
+          background-color: aquamarine;
+          border-radius: 5px;
+          padding: 5px 10px;
+          color: black;
+          &:hover {
+            cursor: pointer;
+            background-color: beige;
+            color: rgb(59, 6, 59);
+          }
+        }
+      }
+      > input {
+        height: 45px;
+      }
+      > input,
+      > textarea {
+        border-radius: 7px;
+        width: 100%;
+        font-size: 1.1rem;
+        padding: 0 25px;
+      }
+    }
+    > button {
+      border-radius: 5px;
+      width: 150px;
+      height: 45px;
+      transition: 0.2s all ease-in;
+      &:hover {
+        cursor: pointer;
+        background-color: rgb(239, 239, 123);
+      }
+    }
+  }
+}

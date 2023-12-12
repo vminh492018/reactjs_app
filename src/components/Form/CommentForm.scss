@@ -1,0 +1,26 @@
+.commentForm {
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: auto;
+    .inputForm {
+      textarea {
+        border-radius: 4px;
+        margin: 5px 0;
+        cursor: pointer;
+      }
+    }
+    button {
+      padding: 5px 10px;
+      border: none;
+      border-radius: 8px;
+      width: 70px;
+
+      &:hover {
+        color: #fff;
+        background-color: #021833;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+h1 {
+  color: #fff;
+  text-align: center;
+}
+
+.wraperTagsList {
+  display: flex;
+  justify-content: center;
+  .tagslist {
+    color: #fff;
+    color: lightgray;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 5px;
+    &:hover {
+      color: #fff;
+      background-color: #28313b;
+    }
+  }
+}
